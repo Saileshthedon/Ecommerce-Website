@@ -26,6 +26,7 @@ function App() {
               <Route path = "home" element = { <Home />} />
               <Route path = "error" element = {<Error />} />
               <Route path = "login" element = { <Login />} />
+              <Route path = "products/:id/login" element = { <Login />} />
               <Route path = "products/:id" element = {<ViewProductSingle />} />
               <Route path = "category/:categoryKey" element = {<ViewCategoryProductList />} />
               <Route path = "search/:searchKey" element = {<Search />} />
