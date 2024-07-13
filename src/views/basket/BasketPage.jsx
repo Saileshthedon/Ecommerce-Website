@@ -50,7 +50,7 @@ const BasketPage = () => {
             {/* basket left */}
             <div className='basket-l py-4'>
               <div className='basket-top bg-white py-3 px-4'>
-                <h2>Shopping Cart <span className='text-primary'>(2)</span></h2>
+                <h2>Shopping Cart</h2>
 
                 <div className='flex align-center justify-between'>
                   <div className='checkbox-item flex py-3'>
