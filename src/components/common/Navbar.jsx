@@ -107,7 +107,7 @@ const Navbar = () => {
                     categories.map((category, idx) => {
                       return (
                         <li className='category-item' key = {idx}>
-                          <Link to = {`category/${category}`} className='category-item-link text-uppercase text-dark fs-12'>{category?.replace("-", " ")}</Link>
+                          <Link to = {`category/${category.slug}`} className='category-item-link text-uppercase text-dark fs-12'>{category.name}</Link>
                         </li>
                       )
                     })
@@ -120,7 +120,7 @@ const Navbar = () => {
                 categories.slice(0, 6).map((category, idx) => {
                   return (
                     <li className='nav-item' key = {idx}>
-                      <Link to = {`category/${category}`} className='nav-link no-wrap'>{category.replace("-", " ")}</Link>
+                      <Link to = {`category/${category.slug}`} className='nav-link no-wrap'>{category.name}</Link>
                     </li>
                   )
                 })
